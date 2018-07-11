@@ -2,4 +2,4 @@
 This is a feedback form is made for the compitition in HighRadius.
 
 
-[![Watch the video](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://www.facebook.com/sourabh.sarkar.750/videos/948741858632118/)
+[![Watch the video](https://github.com/sourabh48/Highradius-Feedback-Application/tree/master/Screenshots/IMG_20180711_232504.jpg)](https://www.facebook.com/sourabh.sarkar.750/videos/948741858632118/)
