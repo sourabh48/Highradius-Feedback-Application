@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/update"
+    tools:context=".UpdateActivity">
+
+
+    <include layout="@layout/app_tool_bar"
+        android:id="@+id/status_app_bar"/>
+
+    <RelativeLayout
+        android:layout_below="@id/status_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:gravity="center">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:src="@drawable/profile"
+        app:civ_border_width="1dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/profile_image"
+        android:onClick="Change"
+        app:civ_border_color="#878787"/>
+
+
+
+    <TextView
+        android:id="@+id/setting_name"
+        android:padding="6dp"
+        android:layout_below="@+id/profile_image"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Username" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/setting_name"
+        android:layout_below="@+id/setting_name"
+        android:background="@drawable/name"
+        android:elevation="23dp"
+        android:onClick="ChangeName"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+
+    <ImageView
+        android:onClick="Change"
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/setting_name"
+        android:layout_alignEnd="@+id/profile_image"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/name"
+        android:elevation="23dp"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+    </RelativeLayout>
+</RelativeLayout>

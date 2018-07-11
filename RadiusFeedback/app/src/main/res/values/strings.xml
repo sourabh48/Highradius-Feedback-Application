@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Radius Feedback</string>
+    <string name="login">Login</string>
+    <string name="enter_password">Enter Password:</string>
+    <string name="enter_email">Enter Email:</string>
+    <string name="signup">Signup</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="name">Name:</string>
+    <string name="title_activity_customer">CustomerActivity</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="title_activity_admin">AdminActivity</string>
+    <string name="logout">LOGOUT</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="details">Details</string>
+    <string name="about_company">About Company:</string>
+    <string name="add_subject">Add Subject:</string>
+
+    <string-array name="Department">
+        <item>Department:</item>
+        <item>HR</item>
+        <item>Manager</item>
+        <item>Food</item>
+        <item>Security</item>
+        <item>Employees</item>
+        <item>Repairing</item>
+        <item>Others</item>
+    </string-array>
+
+
+</resources>

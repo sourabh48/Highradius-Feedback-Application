@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedbackDetails"
+    android:background="@drawable/home">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/logo"
+        android:padding="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/logo"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="17dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/logo"
+        android:layout_centerInParent="true">
+
+        <ScrollView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:id="@+id/banner"
+                android:layout_margin="12dp"
+                android:text="Feedback"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_below="@id/banner"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/department"
+                android:layout_margin="12dp"
+                android:text="Department:"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_below="@+id/banner"
+                android:layout_margin="12dp"
+                android:layout_toEndOf="@+id/department"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:id="@+id/departmentresult"
+                android:text="--"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+
+
+            <TextView
+                android:layout_below="@+id/department"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_margin="12dp"
+                android:id="@+id/subject"
+                android:text="Subject:"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_below="@+id/department"
+                android:layout_margin="12dp"
+                android:layout_toEndOf="@+id/department"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:id="@+id/subjectresult"
+                android:text="--"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+
+            <TextView
+                android:layout_below="@+id/subject"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_margin="12dp"
+                android:id="@+id/details"
+                android:text="Details:"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_below="@+id/details"
+                android:layout_margin="12dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:id="@+id/detailsresult"
+                android:text="--"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+
+
+            <TextView
+                android:layout_below="@+id/detailsresult"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:id="@+id/suggesion"
+                android:text="Suggestion:"
+                android:textSize="17sp"
+                android:layout_margin="12dp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_below="@+id/suggesion"
+                android:layout_margin="12dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:id="@+id/suggessionresult"
+                android:text="--"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+
+            <ImageView
+                android:id="@+id/feedbackimage"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:layout_margin="12dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/edit_text_border"
+                android:layout_below="@+id/suggessionresult"
+                android:src="@drawable/baseline_add_black_18dp"/>
+
+            <TextView
+                android:layout_below="@+id/feedbackimage"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:id="@+id/rating"
+                android:text="Rating:"
+                android:layout_margin="12dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_below="@+id/feedbackimage"
+                android:layout_margin="12dp"
+                android:layout_toEndOf="@+id/department"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:id="@+id/ratingresult"
+                android:text="--"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+        </RelativeLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

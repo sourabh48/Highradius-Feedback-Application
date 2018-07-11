@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#202020"
+    android:layout_height="match_parent"
+    tools:context=".FeedbackFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/logo"
+                android:padding="12dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/logo"/>
+
+            <Spinner
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:background="@drawable/edit_text_border"
+                android:id="@+id/feedbacktype"
+                android:layout_margin="12dp"
+                android:ems="20"
+                android:textSize="17sp"
+                android:entries="@array/Department"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/feedbacktype"
+                android:id="@+id/subject"
+                android:background="@drawable/edit_text_border"
+                android:hint="@string/add_subject"
+                android:padding="12dp"
+                android:textColorHint="#000000"
+                android:layout_margin="12dp"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subject"
+                android:id="@+id/Details"
+                android:background="@drawable/edit_text_border"
+                android:inputType="textMultiLine"
+                android:hint="@string/details"
+                android:padding="12dp"
+                android:textColorHint="#000000"
+                android:minLines="4"
+                android:gravity="top|left"
+                android:layout_margin="12dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Details"
+                android:id="@+id/Suggestions"
+                android:hint="Suggesions (optional)"
+                android:textColorHint="#000000"
+                android:padding="12dp"
+                android:inputType="textMultiLine"
+                android:minLines="4"
+                android:layout_margin="12dp"
+                android:gravity="top|left"
+                android:background="@drawable/edit_text_border"/>
+
+            <ImageView
+                android:id="@+id/feedbackimage"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:layout_margin="12dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/edit_text_border"
+                android:layout_below="@+id/Suggestions"
+                android:src="@drawable/baseline_add_black_18dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratings"
+                android:textStyle="bold"
+                android:layout_below="@+id/feedbackimage"
+                android:text="Rating:"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:padding="12dp"/>
+
+            <com.hsalf.smilerating.SmileRating
+                android:id="@+id/smile_rating"
+                android:layout_below="@+id/ratings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_margin="12dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Submit"
+                android:layout_below="@id/smile_rating"
+                android:padding="12dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:background="@drawable/login_button"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

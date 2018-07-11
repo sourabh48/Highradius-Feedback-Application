@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/home"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="13dp"
+        android:layout_margin="12dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/logo"
+            android:padding="12dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/logo"/>
+
+
+        <RelativeLayout
+            android:layout_below="@id/logo"
+        android:id="@+id/abouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/name">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/about"
+        android:layout_margin="12dp"
+        android:text="@string/about_company"
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/aboutCompany"
+        android:layout_below="@+id/about"
+        android:layout_margin="10dp"
+        android:textColor="#ffffff"
+        android:padding="5dp"
+        android:textSize="17sp"
+        android:text="HighRadius is a Fintech enterprise Software-as-a-Service (SaaS) company.The HighRadiusTM Integrated Receivables platform optimizes cash flow through automation of receivables and payments processes across credit, collections, cash application, deductions, electronic billing and payment processing. Powered by the RivanaTM Artificial Intelligence Engine and FredaTM Virtual Assistant for Credit-to-Cash, HighRadius Integrated Receivables enables teams to leverage machine learning for accurate decision making and future outcomes. The radiusOneTM B2B payment network allows suppliers to digitally connect with buyers, closing the loop from supplier receivable processes to buyer payable processes."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/feedback"
+        android:layout_below="@+id/aboutCompany"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:text="To make our company better we prepared a feedback form. We will be very greatful for your contribution."/>
+
+    </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bfeedback"
+            android:layout_below="@+id/abouts"
+            android:layout_margin="19dp"
+            android:padding="10dp"
+            android:text="feedback"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="@drawable/login_button"
+            android:textSize="20sp"/>
+
+   <RelativeLayout
+       android:id="@+id/help"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:layout_below="@+id/bfeedback">
+    <TextView
+        android:background="@drawable/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="12dp"
+        android:textSize="17sp"
+        android:textColor="#ffffff"
+        android:text="In case you want any help or support you can leave your query which will be regularly and quickly addressed for your convenience." />
+
+   </RelativeLayout>
+
+    <Button
+        android:background="@drawable/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bhelp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/help"
+        android:layout_margin="12dp"
+        android:padding="12dp"
+        android:text="Contact Us"
+        android:textSize="20sp"/>
+
+    </RelativeLayout>
+</ScrollView>

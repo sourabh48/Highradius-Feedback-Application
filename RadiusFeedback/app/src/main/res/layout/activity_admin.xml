@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/home"
+    tools:context=".AdminActivity">
+
+    <include layout="@layout/app_tool_bar"
+        android:id="@+id/status_app_bar"/>
+
+    <ImageView
+        android:layout_below="@id/status_app_bar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/logo"
+        android:padding="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/logo"/>
+
+    <ScrollView
+        android:layout_below="@id/logo"
+        android:layout_height="match_parent"
+        android:background="@drawable/name"
+        android:layout_margin="12dp"
+        android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:padding="12dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hr"
+            android:background="@drawable/login_button"
+            android:layout_margin="15dp"
+            android:text="Human Resource"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/manager"
+            android:background="@drawable/login_button"
+            android:layout_margin="15dp"
+            android:text="MANAGER"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/food"
+            android:background="@drawable/login_button"
+            android:layout_margin="15dp"
+            android:text="FOOD"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/security"
+            android:background="@drawable/login_button"
+            android:layout_margin="15dp"
+            android:text="SECURITY"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/employees"
+            android:background="@drawable/login_button"
+            android:layout_margin="15dp"
+            android:text="Employees"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/repairing"
+            android:background="@drawable/login_button"
+            android:layout_margin="15dp"
+            android:text="Repairing"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/others"
+            android:background="@drawable/login_button"
+            android:layout_margin="15dp"
+            android:text="OTHERS"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/conversation"
+            android:background="@drawable/login_button"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="12dp"
+            android:text="Help Desk Conversation"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

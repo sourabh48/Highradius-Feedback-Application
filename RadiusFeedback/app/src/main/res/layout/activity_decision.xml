@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:dots="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/login"
+    tools:context=".DecisionActivity">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/name"
+        android:padding="12dp">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/logo"
+        android:padding="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/logo"/>
+
+    <RelativeLayout
+        android:layout_below="@id/logo"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:background="@drawable/edit_text_border">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/loading"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="31sp"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Wait a sec"
+                android:textColor="#353535"
+                android:fontFamily="serif-monospace" />
+
+            <pl.tajchert.waitingdots.DotsTextView
+                android:id="@+id/dots"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#353535"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                dots:autoplay="true"
+                dots:period="1000" />
+        </LinearLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
